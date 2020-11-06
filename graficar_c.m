@@ -1,8 +1,8 @@
-function [] = graficar_c(x)
+function [] = graficar_c()
+x = [-10:.05:10];
+poly1 = polyval([1 18],x);
 
-poly1 = polyval([1 18],x)
-
-y = 6*exp(poly1)
+y = 6*exp(poly1);
 
 tiledlayout(2,1)
 nexttile

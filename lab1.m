@@ -11,6 +11,7 @@ vector = [4 28 1 4 82 17 38 49 1]
 %graficar_a(x1)
 %graficar_b(x1)
 %graficar_c(x2)
+%graficar_a_b(x1)
 %newton_raphson(f,iterMax,error,x0)
 diferenciaCuadrada(vector)
 

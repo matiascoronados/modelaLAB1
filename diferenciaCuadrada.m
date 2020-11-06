@@ -1,8 +1,4 @@
 function [diferencia] = diferenciaCuadrada(vector)
-%Se verifica si es valida la entrada
-if length(vector) < 4 | ~isvector(vector) | ~isnumeric(vector)
-    diferencia = "entrada invalida";
-else
 %Se obtiene la suma de los 4 mayores/menores elementos del vector
     sumaMayores = sumarElementos(@obtenerMayor,vector);
     sumaMenores = sumarElementos(@obtenerMenor,vector);
@@ -15,7 +11,6 @@ else
     else
         diferencia = sqrt(sumaMayores) - sqrt(sumaMenores);
     end
-end
 end
 
 %Esta funcion se encarga de sumar los 4 elementos de vector. Este se norma
